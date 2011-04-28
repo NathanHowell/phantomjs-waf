@@ -4,3 +4,7 @@
 Makefile*
 bin/
 *~
+.lock-wafbuild
+build/
+.waf-*
+.*.swp

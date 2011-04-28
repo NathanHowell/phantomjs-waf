@@ -36,6 +36,7 @@
 #include "utils.h"
 
 #include "phantom.h"
+#include "phantom.moc"
 
 #define JS_MOUSEEVENT_CLICK_WEBELEMENT  "(function (target) { " \
                                             "var evt = document.createEvent('MouseEvents');" \

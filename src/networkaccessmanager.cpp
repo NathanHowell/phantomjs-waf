@@ -35,6 +35,7 @@
 #include <QNetworkDiskCache>
 
 #include "networkaccessmanager.h"
+#include "networkaccessmanager.moc"
 
 // public:
 NetworkAccessManager::NetworkAccessManager(QObject *parent, bool diskCacheEnabled)

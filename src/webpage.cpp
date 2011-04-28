@@ -31,6 +31,7 @@
 #include <QApplication>
 
 #include "webpage.h"
+#include "webpage.moc"
 
 // public:
 WebPage::WebPage(QObject *parent)
