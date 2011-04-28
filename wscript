@@ -5,10 +5,10 @@ top = '.'
 out = 'build'
 
 def options(opt):
-	pass
+	opt.recurse('src')
 
 def configure(conf):
-	pass
+	conf.recurse('src')
 
 def build(bld):
 	bld.recurse('src')
