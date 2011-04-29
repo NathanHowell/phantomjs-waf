@@ -19,9 +19,9 @@ def build(bld):
 	bld.program(
 		features = 'qt4 cxx cxxprogram',
 		uselib   = 'QTCORE QTWEBKIT',
-        use      = 'gif',
+		use      = 'gif',
 		source   = ['main.cpp', 'phantomjs.qrc', 'csconverter.cpp', 'networkaccessmanager.cpp',
-                    'phantom.cpp', 'utils.cpp', 'webpage.cpp', 'gif/gifwriter.cpp'],
+                    'phantom.cpp', 'utils.cpp', 'webpage.cpp'],
 		target   = 'window',
 		includes = '. ./gif',
 	)

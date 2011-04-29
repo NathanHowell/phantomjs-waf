@@ -5,15 +5,17 @@ top = '../..'
 out = 'build'
 
 def options(opt):
-	opt.load('compiler_c')
+	opt.load('compiler_cxx compiler_c qt4')
 
 def configure(conf):
-	conf.load('compiler_c')
+	conf.load('compiler_cxx compiler_c qt4')
 	conf.env.append_value('CFLAGS', ['-g']) # test
 
 def build(bld):
 	bld.stlib(
-		source   = 'egif_lib.c gifalloc.c gif_err.c gif_hash.c quantize.c',
+		features = 'qt4 cxx',
+		uselib   = 'QTCORE QTGUI',
+		source   = 'gifwriter.cpp egif_lib.c gifalloc.c gif_err.c gif_hash.c quantize.c',
 		target   = 'gif',
 		includes = '.',
         defines  = ['HAVE_CONFIG_H', 'HAVE_STDINT_H', 'HAVE_FCNTL_H', 'HAVE_UNISTD_H', 'HAVE_STDARG_H']
